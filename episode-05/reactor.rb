@@ -14,6 +14,7 @@
 class Reactor
 
   def initialize(enterprise)
+    # binding.pry
     @enterprise         = enterprise
     @core               = Location.new
     @on                 = false
@@ -68,7 +69,7 @@ class Reactor
 
   def heat_items_in_core
     @core.contents.each do |item|
-      datas_cat_eats_dilithium_crystals
+      # datas_cat_eats_dilithium_crystals
       item.temperature += 1 if draw_power
     end
   end

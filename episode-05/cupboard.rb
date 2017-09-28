@@ -20,6 +20,7 @@ class Cupboard
   end
 
   def find_glass
+    # binding.pry
     @shelf.contents.find do |obj|
       obj.class == Glass
     end
